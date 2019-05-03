@@ -1,0 +1,17 @@
+{
+  "name": "Heraldry",
+  "version": "1.0",
+  "description": "Show historical space mission patches when opening tabs",
+  "permissions": ["storage", "tabs"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "chrome_url_overrides" : {
+    "newtab": "heraldryPage.html"
+  },
+  "web_accessible_resources": [
+    "patches/*"
+  ],
+  "manifest_version": 2
+}
