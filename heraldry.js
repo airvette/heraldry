@@ -4,14 +4,8 @@
 
 'use strict';
 
-function randomMissionName() {
-    // Returns a random mission name
-    const name = ["Gemini", "Apollo", "Shuttle", "Rover", "Cassini"];
-    return names[Math.floor(Math.random() * names.length)];
-}
-
 document.addEventListener('DOMContentLoaded', function(){
-    document.body.style.backgroundColor = '#87cefa';
+    //document.body.style.backgroundColor = '#87cefa';
 
     // Select a random mission
     let mission = Math.floor(Math.random() * heraldryTable.length);

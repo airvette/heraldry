@@ -5,6 +5,6 @@
 'use strict';
 
 chrome.tabs.onCreated.addListener(function() {
-    console.log('A new tab has been opened. Set color to  Light Sky Blue');
+    console.log('A new tab has been opened. Randomly selected a space mission');
 });
 
