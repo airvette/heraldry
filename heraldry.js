@@ -28,11 +28,15 @@ document.addEventListener('DOMContentLoaded', function(){
     missionPatch.src = imgURL;
     console.log(imgURL);
 
-    // Insert Date
-
     // Insert Description
     let missionNumber = document.getElementById("mission-description");
     missionNumber.insertAdjacentText(
         "afterBegin", heraldryTable[mission].description
+    );
+
+    // Insert Date
+    let missionDate = document.getElementById("mission-date");
+    missionDate.insertAdjacentHTML(
+        "afterBegin", heraldryTable[mission].date
     );
 });
