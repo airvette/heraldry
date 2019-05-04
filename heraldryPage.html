@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Heraldry</title>
+
     <link rel="stylesheet" href="stylesheets/bootstrap.css">
-    <script type="text/javascript" src="heraldry_config.js"></script>
-    <script type="text/javascript" src="heraldry.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="height: 100%;">
 
-        <div class="row">
-            <div class="col"></div>
+        <!-- Title Row -->
+        <div class="row" style="padding: 2% 0">
             <div class="col">
                 <h1 class="text-center" id="mission-name"></h1>
             </div>
-            <div class="col"></div>
         </div>
 
+        <!-- Patch Row -->
         <div class="row">
             <div class="col"></div>
             <div class="col">
@@ -28,16 +27,66 @@
             <div class="col"></div>
         </div>
 
-        <div class="row">
+        <!-- Description Row -->
+        <div class="row" style="padding: 1em 0 0 0">
             <div class="col"></div>
             <div class="col">
                 <h4 class="text-left" id="mission-description"></h4>
-                <p id="mission-date"></p>
             </div>
             <div class="col"></div>
         </div>
 
+        <!-- Additional Details Row -->
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-2" id="mission-date">
+                <!--<p id="mission-date"></p>-->
+            </div>
+            <div class="col-2 text-right">
+                <!--
+                <button class="btn btn-link btn-sm" data-toggle="collapse"
+                        data-target="#moreBox">
+                    More
+                </button>
+                <div class="collapse"
+                     id="moreBox">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+                -->
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+        <div class="row align-items-end">
+            <div class="col"></div>
+            <div class="col text-right">
+                <div class="collapse"
+                     id="moreBox">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-end">
+            <div class="col"></div>
+            <div class="col text-right">
+                <button class="btn btn-link btn-sm" data-toggle="collapse"
+                        data-target="#moreBox">
+                    More
+                </button>
+            </div>
+        </div>
+
     </div>
+
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="heraldry_config.js"></script>
+    <script type="text/javascript" src="heraldry.js"></script>
 
 </body>
 </html>
