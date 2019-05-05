@@ -33,4 +33,18 @@ document.addEventListener('DOMContentLoaded', function(){
     missionDate.insertAdjacentHTML(
         "afterBegin", heraldryTable[mission].date
     );
+
+    // Insert Additional Content Link
+    let moreInfoLink = document.getElementById("more-info-link");
+    moreInfoLink.href = heraldryTable[mission].link;
+    moreInfoLink.insertAdjacentHTML(
+        "beforeend", heraldryTable[mission].name
+    );
+
+    // Insert Year
+    let myFooter = document.getElementById("footer-text");
+    let currentYear = new Date();
+    myFooter.insertAdjacentHTML(
+        "afterBegin", currentYear.getFullYear()
+    )
 });

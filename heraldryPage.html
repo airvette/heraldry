@@ -5,19 +5,55 @@
     <title>Heraldry</title>
 
     <link rel="stylesheet" href="stylesheets/bootstrap.css">
+
+    <style>
+        html, body {
+        height: 100%;
+        margin: 0px;
+        }
+        .my-container {
+            height: 100%;
+            border: solid;
+        }
+
+        .my-footer {
+            color: lightgray;
+        }
+
+        .my-footer-links {
+            color: lightgray;
+            font-weight: bold;
+        }
+
+        /*.flex-row {
+            border: solid;
+            border-color: green;
+        }
+
+        .col {
+            border: solid;
+            border-color: red;
+        }
+        
+        .flex-column {
+            border: solid;
+            border-color: yellow;
+        }*/
+    </style>
 </head>
 <body>
-    <div class="container" style="height: 100%;">
+    <div class="d-flex flex-column my-container">
 
         <!-- Title Row -->
-        <div class="row" style="padding: 2% 0">
-            <div class="col">
+        <div class="p-2 d-flex flex-row flex-grow-1
+                    justify-content-center align-items-end">
+            <div class="d-flex">
                 <h1 class="text-center" id="mission-name"></h1>
             </div>
         </div>
 
         <!-- Patch Row -->
-        <div class="row">
+        <div class="d-flex flex-row">
             <div class="col"></div>
             <div class="col">
                 <img id="patch"
@@ -28,58 +64,51 @@
         </div>
 
         <!-- Description Row -->
-        <div class="row" style="padding: 1em 0 0 0">
-            <div class="col"></div>
-            <div class="col">
-                <h4 class="text-left" id="mission-description"></h4>
-            </div>
-            <div class="col"></div>
+        <div class="pt-2 d-flex flex-row justify-content-center">
+            <h4 id="mission-description"></h4>
         </div>
 
-        <!-- Additional Details Row -->
-        <div class="row">
-            <div class="col-4"></div>
-            <div class="col-2" id="mission-date">
-                <!--<p id="mission-date"></p>-->
-            </div>
-            <div class="col-2 text-right">
-                <!--
-                <button class="btn btn-link btn-sm" data-toggle="collapse"
-                        data-target="#moreBox">
-                    More
-                </button>
-                <div class="collapse"
-                     id="moreBox">
-                    <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    </div>
-                </div>
-                -->
-            </div>
-            <div class="col-4"></div>
+        <!-- Date Row -->
+        <div class="d-flex flex-row justify-content-center">
+            <div id="mission-date"></div>
         </div>
 
-        <div class="row align-items-end">
-            <div class="col"></div>
-            <div class="col text-right">
-                <div class="collapse"
-                     id="moreBox">
-                    <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    </div>
+        <!-- Additional Content Row -->
+        <div class="d-flex flex-row justify-content-center">
+            <div class="collapse"
+                 id="moreBox">
+                <div class="card card-body">
+                    <a href="#" id="more-info-link">
+                        Click this link to learn more about
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="row align-items-end">
-            <div class="col"></div>
-            <div class="col text-right">
-                <button class="btn btn-link btn-sm" data-toggle="collapse"
-                        data-target="#moreBox">
-                    More
-                </button>
-            </div>
+        <!-- More Button -->
+        <div class="d-flex flex-row flex-grow-1
+                    justify-content-center align-items-end">
+            <em><a data-toggle="collapse"
+                    href="#moreBox">
+                More
+            </a></em>
         </div>
+
+        <!-- Footer -->
+        <footer class="text-center my-footer">
+            <em id="footer-text"> Jeff Guido -
+                Made with
+                <a class="my-footer-links"
+                   href="https://getbootstrap.com/">
+                    Bootstrap
+                </a>
+                 - Google Chrome Extension repo
+                <a class="my-footer-links"
+                   href="https://github.com/airvette/heraldry">
+                    @airvette/heraldry
+                </a>
+            </em>
+        </footer>
 
     </div>
 
