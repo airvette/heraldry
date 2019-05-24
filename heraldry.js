@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // Insert Patch
     let missionPatch = document.getElementById("patch");
-    let imgPath = "/patches/" + heraldryTable[mission]["patch-filename"];
+    let imgPath = "/patches/" + heraldryTable[mission]["patchFilename"];
     let imgURL = chrome.runtime.getURL(imgPath);
     missionPatch.src = imgURL;
     console.log(imgURL);
