@@ -17,6 +17,7 @@ In no particular order:
 - [x] Make the add content process easier to add and delete content. This way individual users can add their own content themes, so it doesn't have to be space missions. **Added a python function to streamline this a bit. More refinement can probably be used, but will need to wait**
 - [ ] Come up with default content and images that can be displayed if the config file has issues
 - [ ] Figure out a way to limit the height of a patch and have it still look good. Currently the gemini-11.png image is too tall.
+- [ ] Add button that can toggle pin content so that it comes up everytime a new tab is opened
 
 # How to install as a developer
 _Note: This application uses Google Chrome Extension concepts. You may want to be familiar with both the [Hello Extension](https://developer.chrome.com/extensions) and the [Get Started Tutorial](https://developer.chrome.com/extensions/getstarted) which are helpful onramps to developing Chrome Extensions._
