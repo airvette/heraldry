@@ -25,7 +25,15 @@
             font-weight: bold;
         }
 
-        /*.flex-row {
+        #patch-row {
+            max-height: 65%;
+        }
+
+        #patch {
+            max-height: 100%;
+        }
+
+        .flex-row {
             border: solid;
             border-color: green;
         }
@@ -38,7 +46,7 @@
         .flex-column {
             border: solid;
             border-color: yellow;
-        }*/
+        }
     </style>
 </head>
 <body>
@@ -53,9 +61,9 @@
         </div>
 
         <!-- Patch Row -->
-        <div class="d-flex flex-row">
+        <div id="patch-row" class="d-flex flex-row">
             <div class="col"></div>
-            <div class="col">
+            <div class="col text-center">
                 <img id="patch"
                      class="img-fluid"
                      alt="Responsive image">
