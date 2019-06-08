@@ -15,6 +15,8 @@ In no particular order:
 - [ ] Make an options page
 - [ ] Use the collapsible box as a container for more interesting content than a link (pictures, videos, text, etc)
 - [x] Make the add content process easier to add and delete content. This way individual users can add their own content themes, so it doesn't have to be space missions. **Added a python function to streamline this a bit. More refinement can probably be used, but will need to wait**
+- [ ] Improve content add process by having `table_utility` provide a log indicating if there were any table rows with invalid data
+- [ ] Improve content add process by having `table_utility` not push invalid configs to `heraldry_config.js`
 - [ ] Come up with default content and images that can be displayed if the config file has issues
 - [ ] Figure out a way to limit the height of a patch and have it still look good. Currently the gemini-11.png image is too tall.
 - [ ] Add button that can toggle pin content so that it comes up everytime a new tab is opened
