@@ -18,7 +18,7 @@ In no particular order:
 - [ ] Improve content add process by having `table_utility` provide a log indicating if there were any table rows with invalid data
 - [ ] Improve content add process by having `table_utility` not push invalid configs to `heraldry_config.js`
 - [ ] Come up with default content and images that can be displayed if the config file has issues
-- [ ] Figure out a way to limit the height of a patch and have it still look good. Currently the gemini-11.png image is too tall.
+- [x] Figure out a way to limit the height of a patch and have it still look good. Currently the gemini-11.png image is too tall.
 - [ ] Add button that can toggle pin content so that it comes up everytime a new tab is opened
 
 # How to install as a developer
