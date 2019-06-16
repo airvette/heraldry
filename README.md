@@ -9,7 +9,7 @@ Simple Google Chrome extension that that serves some fun facts and an image at r
 ## Next Steps
 In no particular order: 
 - [x] Write up how to install this extension from GitHub
-- [ ] Figure out how to upload to the Google Chrome extension store so regular users can use it
+- [ ] Follow through on the [publishing tasks to Chrome Web Store](https://developer.chrome.com/webstore/publish) so regular users can use it
 - [ ] Add more space missions for more fun! There are currently 10 missions loaded. Load more Apollo missions next.
 - [x] Document the process to add content and the push it to the extension
 - [ ] Make an options page
