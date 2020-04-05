@@ -1,6 +1,6 @@
 {
   "name": "Heraldry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Show historical space mission patches when opening tabs",
   "permissions": ["storage", "tabs"],
   "background": {

@@ -47,6 +47,11 @@ Make sure you've completed the steps for [installing as a developer](https://git
 2. Run `python table_utility.py` so the values within the table can be extracted and written to `heraldry_config.js`. `heraldry_config.js` is a JavaScript dictionary that the extension references to present content correctly and reference the correct images. Currently all key-value pairs are strings (except `id`), but that may change.
    - This script has a pandas dependency (`pip3 install pandas`)
 3. (Optional) Verify that the change was successful by [unpacking the extension in developer mode](https://developer.chrome.com/extensions/getstarted#manifest).
-4. Commit and push the changes.
+4. Increment the version number in `manifest.json` so the Google extension store will accept it. This may easiest by incrementing the patch number (third digit).
+5. Commit and push the changes.
+   - Stage changes: `git add .`
+   - Commit changes: `git commit`
+   - Push to remote: `git push origin master`
 5. Upload to your extension site on Google (insert link).
+   - Zip the file on your local machine
 4. Repeat as necessary.
