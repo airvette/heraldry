@@ -52,6 +52,7 @@ Make sure you've completed the steps for [installing as a developer](https://git
    - Stage changes: `git add .`
    - Commit changes: `git commit`
    - Push to remote: `git push origin master`
-5. Upload to your extension site on Google (insert link).
+5. Upload to your extension site on the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole).
    - Zip the file on your local machine
+   - Navigate to your extension, select "Package" and click "Upload New Package." 
 4. Repeat as necessary.
