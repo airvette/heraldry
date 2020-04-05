@@ -34,15 +34,19 @@ _Note: This application uses Google Chrome Extension concepts. You may want to b
       heraldry.js  
       ...  
    ```
-1. From your command line and within the heraldry directory, execute `python table_utility.py`. This makes sure `heraldry_config.js` is updated to reflect the data in `heraldry_table.csv`. See [Manually Updating Content](https://github.com/airvette/heraldry/blob/master/README.md#manually-updating-content) to get more information on changing the extension content. 
+1. From your command line and within the heraldry directory, execute `python table_utility.py` (pandas dependency). This makes sure `heraldry_config.js` is updated to reflect the data in `heraldry_table.csv`. See [Manually Updating Content](https://github.com/airvette/heraldry/blob/master/README.md#manually-updating-content) to get more information on changing the extension content. 
 1. Place Chrome into [developer mode and unpack the extension](https://developer.chrome.com/extensions/getstarted#manifest).
 1. Make sure to turn off any extensions that may conflict with this one. Examples include any extensions (like [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=en)) that also execute when opening a new tab.
 1. Open a new tab and let the extension run.
 
 # Manually Updating Content
 Make sure you've completed the steps for [installing as a developer](https://github.com/airvette/heraldry/blob/master/README.md#how-to-install-as-a-developer).
-1. Open `heraldry_table.csv` in a spreadsheet application (such as Excel, Numbers, Open Office, etc). Make the changes and save as a .csv. Note the way the data is structured: 
+1. Open `heraldry_table.csv` in a spreadsheet application (such as Excel, Numbers, Open Office, etc or PyCharm). Make the changes and save as a .csv. Note the way the data is structured: 
    - All columns except the id column will be converted as strings to `heraldry_config.js`. 
    - The `link` column (not `patch_link`) will be passed as a URL to the extension and will be used in an anchor (`<a>`) tag.
-2. Run `python table_utility.py` so the values within the table can be extracted and written to `heraldry_config.js`. `heraldry_config.js` is a JavaScript dictionary that the extension references to present content correctly and reference the correct images. Currently all key-value pairs are strings (except `id`), but that may change. 
-3. Repeat as necessary.
+2. Run `python table_utility.py` so the values within the table can be extracted and written to `heraldry_config.js`. `heraldry_config.js` is a JavaScript dictionary that the extension references to present content correctly and reference the correct images. Currently all key-value pairs are strings (except `id`), but that may change.
+   - This script has a pandas dependency (`pip3 install pandas`)
+3. (Optional) Verify that the change was successful by [unpacking the extension in developer mode](https://developer.chrome.com/extensions/getstarted#manifest).
+4. Commit and push the changes.
+5. Upload to your extension site on Google (insert link).
+4. Repeat as necessary.
